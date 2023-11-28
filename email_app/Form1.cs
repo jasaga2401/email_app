@@ -18,17 +18,18 @@ namespace email_app
         {
 
             // Set up the sender's email address and password
-            string senderEmail = "<username>";
-            string senderPassword = "<password>";
+            string senderEmail = "g.allcock@priestley.ac.uk";
+            string senderPassword = "pltl kpfz qztf hsnr";
 
             // Set up the recipient's email address
-            string recipientEmail = "<recipient>";
+            //string recipientEmail = "gallcockmail@googlemail.com";
+            string recipientEmail = txt_email.Text;
 
             // Create a new MailMessage
             MailMessage mail = new MailMessage(senderEmail, recipientEmail);
 
             // Set the subject and body of the email
-            mail.Subject = "Test Email to Sarah";
+            mail.Subject = "Test Email sent out";
             mail.Body = "This is a test email sent from C#.";
 
             // Set up the SMTP client
@@ -41,7 +42,8 @@ namespace email_app
             {
                 // Send the email
                 smtpClient.Send(mail);
-                Console.WriteLine("Email sent successfully!");
+                lbl_status.Text = "Email sent successfully!";
+                //Console.WriteLine("Email sent successfully!");
             }
             catch (Exception ex)
             {

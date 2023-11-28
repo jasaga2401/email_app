@@ -18,8 +18,8 @@ namespace email_app
         {
 
             // Set up the sender's email address and password
-            string senderEmail = "g.allcock@priestley.ac.uk";
-            string senderPassword = "pltl kpfz qztf hsnr";
+            string senderEmail = "<username";
+            string senderPassword = "<password>";
 
             // Set up the recipient's email address
             //string recipientEmail = "gallcockmail@googlemail.com";
